@@ -36,8 +36,13 @@ end
 
 
 def full?(board)
-  !board.any? { |x| x == " " }
+  board.all? do |box|
+    box == "X" || box == "Y"
+  end
+else
+  return false
 end
+
 
 def draw?(board)
   if !won?(board) && full?(board)
