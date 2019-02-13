@@ -43,6 +43,10 @@ else
   return false
 end
 
+def full?(board)
+  !board.any? { |x| x == " " }
+end
+
 
 def draw?(board)
   if !won?(board) && full?(board)
