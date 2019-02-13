@@ -61,7 +61,6 @@ def over?(board)
   else
     return false
   end
-end
 
 def winner (board)
   index = []
@@ -75,3 +74,4 @@ def winner (board)
       return "O"
     end
   end
+end
