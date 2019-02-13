@@ -36,14 +36,6 @@ end
 
 
 def full?(board)
-  board.all? do |box|
-    box == "X" || box == "Y"
-  end
-else
-  return false
-end
-
-def full?(board)
   !board.any? { |x| x == " " }
 end
 
